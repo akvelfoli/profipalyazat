@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProfiPályázat | Szakértő EU és Hazai Pályázatírás, Támogatás Tanácsadás</title>
+    <meta name="description" content="Maximalizálja pályázati esélyeit a ProfiPályázat szakértőivel! EU és hazai támogatások, GINOP, VEKOP, Kisfaludy Program. Személyre szabott pályázatírás és tanácsadás vállalkozásoknak.">
+    <meta name="keywords" content="pályázatírás, EU támogatás, hazai támogatás, GINOP, VEKOP, Kisfaludy Program, vállalkozásfejlesztés, pályázati tanácsadás, KKV pályázat, vissza nem térítendő támogatás">
+    <link rel="canonical" href="https://www.profipalyazat.hu">
+    <meta property="og:title" content="ProfiPályázat | Szakértő Pályázatírás és Támogatás Tanácsadás">
+    <meta property="og:description" content="Növelje vállalkozása esélyeit EU és hazai pályázatokon szakértő segítségünkkel. GINOP, VEKOP, Kisfaludy Program specialisták.">
+    <meta property="og:url" content="https://www.profipalyazat.hu">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://i.ibb.co/gSNtmkL/0dfa2d36-caad-4d2d-875e-1596310e4e67.jpg">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"></noscript>
+    <style>
+    :root {
+        --primary: #2c3e50;
+        --secondary: #34495e;
+        --accent: #3498db;
+        --bg: #ecf0f1;
+        --text: #2c3e50;
+        --light: #f8f9fa;
+        --dark: #1a252f;
+    }
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.7;
+        color: var(--text);
+        background: var(--bg);
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+    }
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    .navbar {
+        background: var(--primary);
+        padding: 1rem 0;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    }
+    .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar-brand {
+        font-size: 1.5rem;
+        color: var(--light);
+        text-decoration: none;
+        font-weight: 700;
+    }
+    .nav-links {
+        list-style: none;
+        display: flex;
+    }
+    .nav-links li:not(:last-child) {
+        margin-right: 1.5rem;
+    }
+    .nav-links a {
+        color: var(--light);
+        text-decoration: none;
+        transition: color .3s ease;
+    }
+    .nav-links a:hover, .nav-links a:focus {
+        color: var(--accent);
+        outline: none;
+    }
+    .nav-links a.active {
+        color: var(--accent);
+        text-decoration: underline;
+    }
+    .hero {
+        background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url('https://i.ibb.co/gSNtmkL/0dfa2d36-caad-4d2d-875e-1596310e4e67.jpg') no-repeat center/cover;
+        color: var(--light);
+        text-align: center;
+        padding: 160px 0 100px;
+        margin-top: 60px;
+    }
+    .hero h1 {
+        font-size: 2.8rem;
+        margin-bottom: 1rem;
+        text-shadow: 2px 2px 4px rgba(0,0,0,.5);
+    }
+    .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .btn {
+        display: inline-block;
+        padding: 1rem 2rem;
+        text-decoration: none;
+        border-radius: 50px;
+        transition: all .3s ease;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    .btn-primary {
+        background: var(--accent);
+        color: var(--light);
+        border: 2px solid var(--accent);
+    }
+    .btn-primary:hover, .btn-primary:focus {
+        background: transparent;
+        color: var(--accent);
+        box-shadow: 0 4px 8px rgba(52, 152, 219, 0.3);
+        outline: none;
+    }
+    .btn-secondary {
+        background: transparent;
+        color: var(--light);
+        border: 2px solid var(--light);
+    }
+    .btn-secondary:hover, .btn-secondary:focus {
+        background: var(--light);
+        color: var(--primary);
+        outline: none;
+    }
+    .section {
+        padding: 5rem 0;
+    }
+    .section-title {
+        text-align: center;
+        margin-bottom: 3rem;
+        color: var(--primary);
+        font-size: 2.2rem;
+    }
+    .card {
+        background: var(--light);
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0,0,0,.1);
+        padding: 2rem;
+        margin-bottom: 2rem;
+        transition: all .3s ease;
+    }
+    .card:hover, .card:focus-within {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0,0,0,.15);
+    }
+    .card h3 {
+        color: var(--primary);
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .card-icon {
+        font-size: 3rem;
+        color: var(--accent);
+        margin-bottom: 1rem;
+    }
+    .testimonial {
+        background: var (--light);
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0,0,0,.1);
+        margin-bottom: 2rem;
+        position: relative;
+    }
+    .testimonial::before {
+        content: '\201C';
+        font-size: 4rem;
+        position: absolute;
+        top: -10px;
+        left: 10px;
+        color: var(--accent);
+        opacity: .2;
+    }
+    .testimonial-text {
+        font-style: italic;
+        margin-bottom: 1rem;
+    }
+    .testimonial-author {
+        font-weight: 500;
+        color: var(--primary);
+    }
+    .testimonial-logo {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+    }
+    #contact-form .form-group {
+        margin-bottom: 1rem;
+    }
+    #contact-form input,
+    #contact-form textarea {
+        width: 100%;
+        padding: .75rem;
+        border: 1px solid var(--secondary);
+        border-radius: 4px;
+        transition: border-color .3s ease;
+    }
+    #contact-form input:focus,
+    #contact-form textarea:focus {
+        outline: none;
+        border-color: var(--accent);
+        box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.3);
+    }
+    #contact-form button {
+        background: var(--accent);
+        color: var(--light);
+        border: none;
+        cursor: pointer;
+        transition: all .3s ease;
+    }
+    #contact-form button:hover, #contact-form button:focus {
+        background: var(--primary);
+        transform: translateY(-3px);
+        box-shadow: 0 4px 6px rgba(0,0,0,.1);
+        outline: none;
+    }
+    footer {
+        background: var(--dark);
+        color: var(--light);
+        text-align: center;
+        padding: 2rem 0;
+    }
+    .social-links a {
+        color: var(--light);
+        font-size: 1.5rem;
+        margin: 0 .5rem;
+        transition: color .3s ease;
+    }
+    .social-links a:hover, .social-links a:focus {
+        color: var(--accent);
+        outline: none;
+    }
+    .cta-container {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+    .mobile-menu-toggle {
+        display: none;
+        background: none;
+        border: none;
+        color: var(--light);
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    .service-list {
+        list-style-type: none;
+        padding-left: 0;
+    }
+    .service-list li {
+        margin-bottom: 1rem;
+        padding-left: 1.5rem;
+        position: relative;
+    }
+    .service-list li::before {
+        content: '\2022';
+        color: var(--accent);
+        font-weight: bold;
+        position: absolute;
+        left: 0;
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+    }
+    .col {
+        flex: 1;
+        padding: 0 15px;
+        min-width: 300px;
+    }
+    .faq-list {
+        margin-top: 2rem;
+    }
+    .faq-list details {
+        margin-bottom: 1rem;
+        background: var(--light);
+        padding: 1rem;
+        border-radius: 8px;
+    }
+    .faq-list summary {
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .faq-list summary:hover, .faq-list summary:focus {
+        color: var(--accent);
+        outline: none;
+    }
+    .faq-list p {
+        margin-top: 1rem;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+    .fade-in {
+        animation: fadeIn 1s ease-in;
+    }
+    @keyframes slideIn {
+        from {
+            transform: translateY(50px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    .slide-in {
+        animation: slideIn .5s ease-out;
+    }
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+    }
+    .mobile-menu-toggle {
+        animation: pulse 2s infinite;
+    }
+    @media (max-width: 768px) {
+        .hero h1 {
+            font-size: 2.2rem;
+        }
+        .hero p {
+            font-size: 1rem;
+        }
+        .nav-links {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: var(--primary);
+            padding: 1rem;
+        }
+        .nav-links.active {
+            display: flex;
+        }
+        .nav-links li {
+            margin: 0.5rem 0;
+        }
+        .mobile-menu-toggle {
+            display: block;
+        }
+        .section-title {
+            font-size: 1.8rem;
+        }
+        .cta-container {
+            flex-direction: column;
+        }
+        .col {
+            flex: 0 0 100%;
+        }
+        .row {
+            flex-direction: column;
+        }
+    }
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "ProfiPályázat",
+      "description": "Szakértő EU és Hazai Pályázatírás, Támogatás Tanácsadás",
+      "url": "https://www.profipalyazat.hu",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Példa utca 123",
+        "addressLocality": "Budapest",
+        "postalCode": "1234",
+        "addressCountry": "HU"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 47.497912,
+        "longitude": 19.040235
+      },
+      "sameAs": [
+        "https://www.facebook.com/profipalyazat",
+        "https://www.linkedin.com/company/profipalyazat",
+        "https://twitter.com/profipalyazat"
+      ]
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container navbar-container">
+                <a href="#" class="navbar-brand">ProfiPályázat</a>
+                <button class="mobile-menu-toggle" aria-label="Menü megnyitása">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Kezdőlap</a></li>
+                    <li><a href="#services">Szolgáltatások</a></li>
+                    <li><a href="#about">Rólunk</a></li>
+                    <li><a href="#testimonials">Vélemények</a></li>
+                    <li><a href="#contact">Kapcsolat</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1 class="fade-in">Maximalizálja Pályázati Esélyeit Szakértőinkkel</h1>
+                <p class="fade-in">EU és hazai támogatások, GINOP, VEKOP, Kisfaludy Program - Személyre szabott pályázatírás és tanácsadás vállalkozásoknak</p>
+                <div class="cta-container fade-in">
+                    <a href="#contact" class="btn btn-primary">Ingyenes Konzultáció</a>
+                    <a href="#services" class="btn btn-secondary">Szolgáltatásaink</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section">
+            <div class="container">
+                <h2 class="section-title slide-in">Szolgáltatásaink</h2>
+                <div class="row">
+                    <div class="col">
+                        <div class="card slide-in">
+                            <i class="fas fa-file-alt card-icon"></i>
+                            <h3>Pályázatírás</h3>
+                            <p>Professzionális pályázatírás EU és hazai forrásokhoz, a projekt teljes életciklusára kiterjedő támogatással.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card slide-in">
+                            <i class="fas fa-search-dollar card-icon"></i>
+                            <h3>Forráskeresés</h3>
+                            <p>Személyre szabott forráskeresés és pályázati lehetőségek feltárása az Ön vállalkozásának igényei szerint.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card slide-in">
+                            <i class="fas fa-chart-line card-icon"></i>
+                            <h3>Projektmenedzsment</h3>
+                            <p>Teljes körű projektmenedzsment szolgáltatás a pályázat elnyerésétől a megvalósításon át az utánkövetésig.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title slide-in">Rólunk</h2>
+                <div class="row">
+                    <div class="col">
+<p>A ProfiPályázat több mint 10 éves tapasztalattal rendelkező szakértői csapata segít Önnek maximalizálni pályázati esélyeit. Személyre szabott megoldásainkkal és átfogó szolgáltatásainkkal támogatjuk vállalkozása fejlődését.</p>
+                        <ul class="service-list">
+                            <li>Több mint 500 sikeres pályázat</li>
+                            <li>95%-os sikerráta</li>
+                            <li>5 milliárd forint elnyert támogatás</li>
+                            <li>Országos lefedettség</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <img src="https://i.ibb.co/gSNtmkL/0dfa2d36-caad-4d2d-875e-1596310e4e67.jpg" alt="ProfiPályázat csapata" style="width: 100%; border-radius: 8px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="section">
+            <div class="container">
+                <h2 class="section-title slide-in">Ügyfeleink Mondták</h2>
+                <div class="row">
+                    <div class="col">
+                        <div class="testimonial slide-in">
+                            <img src="https://via.placeholder.com/50" alt="Cég logó" class="testimonial-logo">
+                            <p class="testimonial-text">"A ProfiPályázat segítségével sikeresen elnyertünk egy GINOP pályázatot, ami lehetővé tette cégünk technológiai fejlesztését. Professzionális és megbízható partnerek!"</p>
+                            <p class="testimonial-author">- Kovács János, TechInnovációKft.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="testimonial slide-in">
+                            <img src="https://via.placeholder.com/50" alt="Cég logó" class="testimonial-logo">
+                            <p class="testimonial-text">"Hálásak vagyunk a ProfiPályázat csapatának a Kisfaludy Program pályázatában nyújtott segítségükért. Szakértelmük és odafigyelésük kiemelkedő!"</p>
+                            <p class="testimonial-author">- Nagy Éva, PanorámaVendégház</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title slide-in">Kapcsolat</h2>
+                <div class="row">
+                    <div class="col">
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" required placeholder="Az Ön neve">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required placeholder="E-mail cím">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="phone" name="phone" placeholder="Telefonszám (opcionális)">
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" required placeholder="Üzenet"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Üzenet Küldése</button>
+                        </form>
+                    </div>
+                    <div class="col">
+                        <h3>Elérhetőségeink</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> 1234 Budapest, Példa utca 123.</p>
+                        <p><i class="fas fa-phone"></i> +36 1 234 5678</p>
+                        <p><i class="fas fa-envelope"></i> info@profipalyazat.hu</p>
+                        <h3>Nyitvatartás</h3>
+                        <p>Hétfő - Péntek: 9:00 - 17:00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="section">
+            <div class="container">
+                <h2 class="section-title slide-in">Gyakran Ismételt Kérdések</h2>
+                <div class="faq-list">
+                    <details>
+                        <summary>Milyen típusú pályázatokkal foglalkoznak?</summary>
+                        <p>Cégünk széles körben foglalkozik EU-s és hazai pályázatokkal, beleértve a GINOP, VEKOP és Kisfaludy Program pályázatait is. Vállalkozásfejlesztési, innovációs, energetikai és turisztikai projektekre specializálódtunk.</p>
+                    </details>
+                    <details>
+                        <summary>Mennyi idő alatt készül el egy pályázat?</summary>
+                        <p>A pályázat elkészítésének ideje függ a pályázat típusától és összetettségétől. Általában 2-4 hét alatt elkészítjük a teljes dokumentációt, de sürgős esetekben gyorsított eljárásra is van lehetőség.</p>
+                    </details>
+                    <details>
+                        <summary>Mi történik, ha nem nyerünk a pályázaton?</summary>
+                        <p>Sikertelen pályázat esetén részletes elemzést készítünk az elutasítás okairól, és javaslatot teszünk a továbbfejlesztésre. Sok esetben lehetőség van a pályázat újbóli benyújtására vagy alternatív források keresésére.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 ProfiPályázat. Minden jog fenntartva.</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/profipalyazat" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/company/profipalyazat" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/profipalyazat" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+
+            mobileMenuToggle.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+            });
+
+            const contactForm = document.getElementById('contact-form');
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                // Itt implementálhatja a form elküldési logikáját
+                alert('Köszönjük megkeresését! Hamarosan felvesszük Önnel a kapcsolatot.');
+                contactForm.reset();
+            });
+
+            // Sima görgetés a navigációs linkekre kattintáskor
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Animációk hozzáadása görgetéskor
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('slide-in');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.section-title, .card, .testimonial').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
